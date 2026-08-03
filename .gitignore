@@ -5,3 +5,6 @@ _site/
 # The Ghost export contains private keys, session secrets and password hashes.
 # Keep it out of the repository.
 *.ghost.*.json
+
+# Local editor/tooling config
+.claude/
