@@ -69,6 +69,21 @@ Editing on GitHub works too — press `.` in the repo to open the web editor, or
 edit a file directly in the GitHub UI. Committing there triggers the same
 deploy.
 
+### Writing from a browser
+
+`.pages.yml` configures [Pages CMS](https://pagescms.org/), a web editor that
+commits Markdown to this repository. Install its GitHub App on the repo and
+sign in at `app.pagescms.org`; posts, pages and image uploads are all editable
+from a phone or tablet. Every save is a normal commit, so it triggers the same
+deploy — and the CMS can be abandoned at any point without touching content.
+
+`src/_data/site.json` is deliberately not exposed in the CMS: it holds keys
+(`tagNames`, `nav`) that a partial form definition could silently drop. Edit it
+in Git.
+
+New tags need adding to two places: the `tags` options in `.pages.yml`, and
+`tagNames` in `src/_data/site.json` for the display name.
+
 ## Newsletter
 
 `src/_data/site.json` has an empty `newsletterEmbed`. Paste the form snippet
