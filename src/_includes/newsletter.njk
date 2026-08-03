@@ -1,0 +1,10 @@
+{# Drop the embed snippet from your newsletter provider into
+   site.newsletterEmbed (src/_data/site.json). Until then this block renders
+   nothing, so no dead signup form ships. #}
+{% if site.newsletterEmbed %}
+  <aside class="newsletter">
+    <h2>Stay in touch</h2>
+    <p>Receive updates in your mailbox.</p>
+    {{ site.newsletterEmbed | safe }}
+  </aside>
+{% endif %}

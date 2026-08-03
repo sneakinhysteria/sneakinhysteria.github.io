@@ -1,0 +1,18 @@
+---
+layout: base.njk
+permalink: /tags/
+title: Tags
+---
+
+<section class="intro">
+  <h1>Tags</h1>
+</section>
+
+<ul class="tag-list">
+  {% for entry in collections.tagList %}
+    <li>
+      <a class="tag" href="/tag/{{ entry.tag }}/">{{ entry.name }}</a>
+      <span class="count">{{ entry.count }}</span>
+    </li>
+  {% endfor %}
+</ul>

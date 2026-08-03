@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.locale }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ excerpt or site.description }}" />
+    <link rel="canonical" href="{{ page.url | absolute }}" />
+    <link rel="icon" href="{{ site.icon }}" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss/" />
+
+    <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ title or site.title }}" />
+    <meta property="og:description" content="{{ excerpt or site.description }}" />
+    <meta property="og:url" content="{{ page.url | absolute }}" />
+    <meta property="og:image" content="{{ (image or site.cover) | absolute }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="/">
+        {% if site.logo %}
+          <img src="{{ site.logo }}" alt="{{ site.title }}" />
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </a>
+      <nav aria-label="Main">
+        {% for item in site.nav %}
+          <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main id="main">
+      {{ content | safe }}
+    </main>
+
+    {% include "newsletter.njk" %}
+
+    <footer class="site-footer">
+      <p>{{ site.title }}</p>
+      <nav aria-label="Footer">
+        <a href="/tags/">All tags</a>
+        <a href="/rss/">RSS</a>
+      </nav>
+      <p class="colophon">Made with 🖤, 🧠 and 🖐🏻 in Amsterdam.</p>
+    </footer>
+  </body>
+</html>

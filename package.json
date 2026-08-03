@@ -1,0 +1,14 @@
+{
+  "name": "holgerschueler-com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "turndown": "^7.2.0"
+  }
+}

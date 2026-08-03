@@ -1,0 +1,45 @@
+{
+  "title": "Holger Schueler - thoughts and players",
+  "description": "Thoughts & Players contains Holger's written content as well as music and other forms of expression",
+  "url": "https://holgerschueler.com",
+  "accent": "#ff0534",
+  "locale": "en",
+  "logo": "/content/images/2024/10/holger--1024-x-256-px---800-x-256-px--6.png",
+  "icon": "/content/images/2024/10/holger-1.webp",
+  "cover": "/content/images/2024/10/turntable-mint.png",
+  "nav": [
+    {
+      "url": "/",
+      "label": "Home"
+    },
+    {
+      "url": "/about/",
+      "label": "About"
+    },
+    {
+      "url": "/tag/thoughts/",
+      "label": "Thoughts"
+    },
+    {
+      "url": "/tag/players/",
+      "label": "Players"
+    }
+  ],
+  "author": "Holger Schueler",
+  "tagNames": {
+    "news": "News",
+    "business": "Business",
+    "lego": "LEGO",
+    "queer": "Queer",
+    "riding": "Riding",
+    "music": "Music",
+    "galgo": "Galgo",
+    "ev-conversion": "EV-Conversion",
+    "design": "Design",
+    "photos": "Photos",
+    "thoughts": "Thoughts",
+    "players": "Players",
+    "society": "Society"
+  },
+  "newsletterEmbed": ""
+}
