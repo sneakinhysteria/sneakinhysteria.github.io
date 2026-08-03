@@ -33,7 +33,6 @@ Add a Markdown file to `src/posts/`:
 ---
 title: "Post title"
 date: "2026-08-03T09:00:00.000Z"
-slug: "post-title"
 excerpt: "One line used in listings, meta description and RSS."
 image: "/content/images/2026/08/photo.jpg"
 tags: ["posts", "thoughts"]
@@ -42,8 +41,33 @@ tags: ["posts", "thoughts"]
 Body text.
 ```
 
-`tags` must keep `posts` as its first entry — that is what the listing, RSS
-feed and tag pages collect on. Tag display names live in `src/_data/site.json`.
+| Field     | Required | Notes                                                        |
+| --------- | -------- | ------------------------------------------------------------ |
+| `title`   | yes      | Also the `<title>` and OG title.                              |
+| `date`    | yes      | ISO 8601. Sets the ordering; omit and Eleventy guesses.       |
+| `tags`    | yes      | Must contain `posts`. Anything else becomes a tag page.       |
+| `slug`    | no       | Defaults to the filename, which is the usual case.            |
+| `excerpt` | no       | Falls back to the first ~200 characters of the body.          |
+| `image`   | no       | Feature image; also the social preview.                       |
+| `draft`   | no       | `true` keeps the post out of the build entirely.              |
+
+Tag display names (`thoughts` → `Thoughts`) live in `src/_data/site.json`. A tag
+used without an entry there just displays as its slug.
+
+Images go in `src/content/images/<year>/<month>/` and are referenced from the
+site root: `/content/images/2026/08/photo.jpg`.
+
+### The loop
+
+```bash
+npm start                      # http://localhost:8080, live reloads on save
+git add . && git commit -m "New post: title"
+git push                       # Actions rebuilds and deploys in ~1 minute
+```
+
+Editing on GitHub works too — press `.` in the repo to open the web editor, or
+edit a file directly in the GitHub UI. Committing there triggers the same
+deploy.
 
 ## Newsletter
 

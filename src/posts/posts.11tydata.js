@@ -3,6 +3,10 @@
 export default {
   layout: "post.njk",
   eleventyComputed: {
-    permalink: (data) => `/${data.slug}/`,
+    // Falls back to the filename, so a post without an explicit slug still
+    // gets a sensible URL. `draft: true` keeps a post out of the build.
+    permalink: (data) =>
+      data.draft ? false : `/${data.slug || data.page.fileSlug}/`,
+    eleventyExcludeFromCollections: (data) => Boolean(data.draft),
   },
 };
