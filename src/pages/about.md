@@ -15,7 +15,7 @@ In my free time, I dive deep into a few intersecting and diverse obsessions, mai
 
 ### Queer AF
 
-I am non-binary. My pro-nouns are they/them. Some call this  agender. No matter what I do, I do it it as a queer person. This means that I question traditional gender definitions, stereotypes and expressions and that I do not conform to them. I believe in ex-gendering our world and embracing the non-binary in both gender identity and sexual orientation.
+I am non-binary. My pro-nouns are they/them. Some call this agender. No matter what I do, I do it it as a queer person. This means that I question traditional gender definitions, stereotypes and expressions and that I do not conform to them. I believe in ex-gendering our world and embracing the non-binary as a philosophy of life. 
 
 ### Origins and influences
 
