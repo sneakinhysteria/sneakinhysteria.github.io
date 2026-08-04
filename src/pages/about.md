@@ -2,7 +2,7 @@
 title: About me and this site
 slug: about
 excerpt: Who reads about pages?
-image: /content/images/2024/10/8de7351c-cdcf-48ad-a65e-d22e4a3f45de.jpg
+image: /content/images/Holgs duo.webp
 draft: false
 ---
 If you so happen to stumble about this page and we have not met, here are a few bits and pieces about me.
