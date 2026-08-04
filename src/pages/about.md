@@ -25,13 +25,5 @@ I was born in German, moved around a few times from south to south-west and to t
 
 This website is in English, but I also speak German and enough Dutch to get by outside the big metropoles.
 
-### Access all areas
-
-By signing up, you'll get access to the full archive of everything that's been published before and everything that's still to come.
-
-### Fresh content, delivered
-
-Stay up to date with new content sent straight to your inbox! No more missing something because of a pesky algorithm or news feed.
-
 ---
 
