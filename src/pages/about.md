@@ -1,8 +1,9 @@
 ---
 title: About me and this site
 slug: about
+date: 2024-10-10T14:10:18.000Z
 excerpt: Who reads about pages?
-image: /content/images/Holgs duo.webp
+image: /content/images/uploads/holgs-duo.webp
 draft: false
 ---
 If you so happen to stumble about this page and we have not met, here are a few bits and pieces about me.

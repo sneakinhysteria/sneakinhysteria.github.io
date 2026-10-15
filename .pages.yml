@@ -42,6 +42,8 @@ content:
         type: image
         media: images
         categories: [image]
+        path: uploads
+        rename: safe
       - name: tags
         label: Tags
         type: select
@@ -96,6 +98,9 @@ content:
         label: Slug
         type: string
         required: true
+      - name: date
+        label: Published
+        type: date
       - name: excerpt
         label: Excerpt
         type: text
@@ -104,6 +109,8 @@ content:
         type: image
         media: images
         categories: [image]
+        path: uploads
+        rename: safe
       - name: draft
         label: Draft
         type: boolean
