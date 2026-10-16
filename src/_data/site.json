@@ -41,5 +41,5 @@
     "players": "Players",
     "society": "Society"
   },
-  "newsletterEmbed": ""
+  "newsletterEmbed": "<form class=\"newsletter-form\" action=\"https://buttondown.com/api/emails/embed-subscribe/holgerschueler\" method=\"post\"><label class=\"visually-hidden\" for=\"bd-email\">Email address</label><input id=\"bd-email\" type=\"email\" name=\"email\" placeholder=\"you@example.com\" autocomplete=\"email\" required><button type=\"submit\">Subscribe</button></form>"
 }
