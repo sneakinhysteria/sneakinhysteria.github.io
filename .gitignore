@@ -8,3 +8,6 @@ _site/
 
 # Local editor/tooling config
 .claude/
+
+# Member exports and other CSVs carry personal data
+*.csv
