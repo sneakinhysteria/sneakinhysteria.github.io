@@ -39,3 +39,20 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Sends newly added posts to Buttondown subscribers. Does nothing until
+  # BUTTONDOWN_API_KEY is set, and never fires for edits or drafts.
+  notify:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: node tools/notify-subscribers.mjs "${{ github.event.before }}" "${{ github.sha }}"
